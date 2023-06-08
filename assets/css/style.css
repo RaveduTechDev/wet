@@ -744,56 +744,42 @@ main {
 
 
 .form-group {
-    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.via {
+    justify-content: center;
+    margin-top: 5rem;
     padding: 2rem;
+    display: flex;
 }
 
 
-.form-group form input {
-    padding: 3px;
-    width: 100%;
-    background-color: transparent;
-    margin-bottom: 15px;
-    resize: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    border: none;
-	border-bottom: 1px solid rgb(0, 0, 0);
+.via-wa {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 4rem;
 }
 
-.form-group form textarea {
-    border-radius: 10px;
-    padding: 3px;
-    width: 100%;
-    background-color: transparent;
-    margin-bottom: 15px;
-    resize: none;
-    outline: none;
-    color: rgb(0, 0, 0);
+.via-wa a i {
+    font-size: 1.2rem;
+    padding-right: 0.2rem;
 }
 
-.form-group iframe {
-    width: 100%;
-}
-
-.btn-form {
-    display: inline;
-}
-
-.btn-form button {
-    width: 30%;
+.via-wa a {
+    text-decoration: none;
+    color: white;
     padding: 10px;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: all .5s;
     border-radius: 10px;
     background-color: #0f74bc;
-    color: white;
+    transition: all 300ms ease;
 }
 
-.btn-form button:hover {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+.via-wa a:hover {
+    background-color: #000000;
+
 }
 
 .konten-kontak {
@@ -833,18 +819,19 @@ main {
 }
 
 .hubungi .contain-hubungi .card-hubungi {
-    display: flex;
+    display: block;
 }
 
 .body-hubungi {
-    margin-left: 7rem;
-    flex: 0 0 20%;
+    margin: 0 10%;
+    display: flex;
 }
 
 .icons-email {
     margin-top: 10px;
     display: flex;
 }
+
  
 .body-hubungi i {
     padding-right: 5px;
@@ -856,7 +843,14 @@ main {
 }
 
 .body-hubungi .card-img img {
+    display: flex;
+    margin: 0 auto;
     width: 300px;
+}
+
+.pt {
+    margin-top: 4rem;
+    padding-left: 5rem;
 }
 
 /* FOOTER */ 
@@ -1000,6 +994,22 @@ footer {
   /* /////// RESPONSIVE 2 222222222222222222 // // / / / / / */
   @media screen and (max-width: 900px) {
 
+    
+    .via {
+        display: block;
+        text-align: center;
+    }
+
+    .body-hubungi {
+        margin: 0;
+        display: block;
+    }
+
+    .pt {
+        margin: 0;
+        padding: 0;
+    }
+
     .card-img {
         margin-bottom: 3rem;
         display: flex;
@@ -1126,6 +1136,10 @@ footer {
 		transition: all 1s;
 		opacity: 0;
 	}
+
+    nav ul li  {
+        margin-top: -15rem;
+    }
 
 	nav ul.slide {
 		opacity: 1;
@@ -1259,6 +1273,11 @@ footer {
 
   /* /////// RESPONSIVE 3 3 3 3 3 3 3 3 3 3 333333333 // // / / / / / */
   @media screen and (max-width: 500px) {
+
+    .via-wa {
+        margin-left: 0;
+        margin-right: 0;
+    }
     
     ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman p {
         margin-top: 1rem;
