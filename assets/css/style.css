@@ -1,0 +1,1683 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ededf0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.navigasi {
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    box-shadow: 0 2px 15px #0f74bc;
+}
+
+.logo {
+    flex-grow: 1;
+    margin-left: 6rem;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.scrolling {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.scrolling .logo {
+    margin-left: 8rem;
+}
+
+nav {
+    margin-right: 5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem ;
+}
+
+nav ul li {
+    padding-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: #0f74bc;
+    transition: all ease 500ms;
+    margin: 0 auto;
+}
+
+nav ul li a:hover {
+    color: #0f74bc;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li ._hubungiKami {
+    background-color: #0f74bc;
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 10px 5px;
+    display: block;
+    color: white;
+    transition: all ease 500ms;
+} nav ul li ._hubungiKami:hover {
+    color: black;
+}
+
+nav ul li .nav-links.active {
+    color: #0f74bc;
+    position: relative;
+}
+
+nav ul li .nav-links.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #0f74bc;
+    transition: all ease 500ms;
+    margin: 0 auto;
+}
+
+/*Hamburger Menu*/
+.nav-responsive {
+	margin: 16px 0 0;
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+}
+
+.nav-responsive input {
+	position: absolute;
+	width: 50px;
+	height: 35px;
+	left: -10px;
+	top: -5px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.nav-responsive span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: #0f74bc;
+	border-radius: 3px;
+	transition: all 0.4s;
+	z-index: 3;
+	cursor: pointer;
+}
+/* Hamburger Menu Animation */
+.nav-responsive span:nth-child(2) {
+	transform-origin: 0 0;
+}
+
+.nav-responsive span:nth-child(4) {
+	transform-origin: 0 100%;
+}.nav-responsive input:checked ~ span:nth-child(2) {
+	background-color: #2C3639;
+	transform: rotate(45deg) translate(-1px, -1px);
+}.nav-responsive input:checked ~ span:nth-child(3) {
+	opacity: 0;
+	transform: scale(0);
+}.nav-responsive input:checked ~ span:nth-child(4) {
+	background-color: #2C3639;
+	transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+/* Home */
+
+main {
+    min-height: 100vh;
+    background-color: #ededf0;
+}
+
+.main-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.043), rgba(0, 0, 0, 0.043)), 
+    url(../img/background.jpg);
+    min-height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content .container {
+    display: flex;
+}
+
+.main-content .text-pembuka {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.main-content .text-pembuka h1 {
+    text-align: right;
+    font-size: 3rem;
+    padding-top: 7rem;
+    padding-left: 7rem;
+    line-height: 5rem;
+}
+
+.main-content .aside-pembuka {
+    margin-left: 4rem;
+    padding-top: 2.5rem;
+    padding-right: 6rem;
+}
+
+.main-content .aside-pembuka img {
+    width: 400px;
+}
+
+.main-content .text-pembuka .text-color {
+    color: #0f74bc;
+    display: block;
+    font-size: 7rem;
+}
+
+/* 0f74bc */
+
+/* partnership */
+.partnership {
+    margin-top: -3rem;
+    background-color: #0f74bc;
+}
+
+.partnership h2 {
+    text-align: center;
+    color: white;
+}
+
+.partnership .bg-partnership {
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.partnership .bg-partnership .customer {
+    display: flex;
+    animation: logo 60s linear infinite;
+}
+
+@keyframes logo {
+    form {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-260%);
+    }
+}
+
+.partnership .bg-partnership .para-logo {
+    background-color: #ededf0;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 4rem 3rem 0 ;
+    justify-content: space-around;
+    display: flex;
+    
+}
+
+.partnership .bg-partnership .para-logo img {
+    object-fit: contain;
+    object-position: left;
+    width: 150px;
+    opacity: 0.5;
+    transition: all ease 300ms;
+}
+
+.partnership .bg-partnership .para-logo img:hover {
+    filter: none;
+    opacity: 100;
+}
+
+/* produk */
+
+.iklan-bawah {
+    margin-top: -1rem;
+}
+.gelombang {
+    margin-top: -5rem;
+    z-index: 1;
+}
+
+/* tentang air */
+.produk-content {
+    position: relative;
+}
+
+.produk-content .content {
+    display: flex
+}
+
+.produk-content .content .img-wet {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-left: 7rem;
+}
+
+.produk-content .content .img-wet img {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.produk-content .content .tentang-wet h2 {
+    color: #0f74bc;
+    font-size: 3rem;
+}
+
+.produk-content .content .tentang-wet p {
+    margin-right: 5rem;
+    margin-bottom: 1.2rem;
+    color: black;
+}
+
+/* visi misi */
+.visi-misi {
+    margin-top: -2rem;
+}
+
+.visi-misi .background-visi {
+    background-color: #0f74bc;
+    display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+
+.visi-misi .background-visi .visi h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+.visi-misi .background-visi .visi p {
+    color: white;
+}
+
+.visi-misi .background-visi .misi {
+    margin-top: 2rem;
+}
+
+.visi-misi .background-visi .misi ul {
+    margin-left: 1.2rem;
+}.visi-misi .background-visi .misi li {
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.visi-misi .background-visi .goals img {
+    width: 400px;
+} 
+
+
+/* layanan produk = = = = = == = = = = == = = = = = = = = */
+
+.layanan-produk {
+    min-height: 100vh;
+}
+
+.layanan-produk .judul {
+    text-align: center;
+    color: #0f74bc;
+    position: relative;
+}
+
+.layanan-produk .judul::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.layanan-produk p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.layanan-produk .bg-produk {
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+._home-layananProduk {
+    display: flex;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+._home-layananProduk .produk-produk {
+    flex-grow: 1;
+    margin-top: 5rem;
+}
+
+._home-layananProduk .produk-produk a {
+    text-decoration: none;
+    color: black;
+}
+
+._home-layananProduk .bg-produk {
+    margin: 0 5rem;
+    background-color: #0f74bc;
+    padding: 10px 50px;
+    border-radius: 20px 0;
+    box-shadow: 1px 2px 15px black;
+    transition: all ease 300ms;
+}
+
+._home-layananProduk .bg-produk:hover {
+    transform: scale(1.05);
+    background-color: #0a609e;
+}
+
+.bg-produk img {
+    width: 150px;
+}
+
+
+.alur-produksi {
+    margin-top: 5rem;
+}
+
+.alur-produksi .bg-produksi h2 {
+    text-align: center;
+    color: #0f74bc;
+}
+
+.alur-produksi .bg-produksi .gambar-alur {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.alur-produksi .bg-produksi .gambar-alur img {
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+/* HALAMAN Tentang */
+.tentang-wet-produk .latar-belakang {
+    padding-top: 5rem;
+}
+
+.tentang-wet-produk .latar-belakang h2.judul {
+    text-align: center;
+    color: #0f74bc;
+    position: relative;
+}
+
+.tentang-wet-produk .latar-belakang h2.judul::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+ 
+.jelasin-latarBel {
+    display: flex;
+    margin: 5rem 12rem 0;
+}
+
+.foto-jelasin {
+    flex: 1;
+}
+
+.foto-jelasin img {
+    width: 350px;
+}
+
+.text-jelasin {
+    margin-left: 12rem;
+    padding: 15px;
+}
+
+.text-jelasin h2 {
+    color: #0f74bc;
+    font-size: 4rem;
+}
+
+
+/* nilai nilai */
+.nilai-perusahaan {
+    margin-bottom: 10em;
+}
+
+.nilai-perusahaan h2 {
+    color: #0f74bc;
+    text-align: center;
+}
+
+.nilai-perusahaan .nilai-nilai {
+    margin: 5rem 7rem 0;
+    display: flex;
+}
+.nilai-perusahaan .nilai-nilai .bg-nilai {
+    background-color: #0f74bc;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nilai-perusahaan .nilai-nilai .bg-nilai i,
+.nilai-perusahaan .nilai-nilai .bg-nilai h3 {
+    font-weight: 600;
+    color: #ededf0;
+    font-size: 1.6rem;
+    text-align: center;
+}.nilai-perusahaan .nilai-nilai .bg-nilai .icons {
+    text-align: center;
+}
+
+
+/* jess */
+
+._home-perawatan {
+    margin-top: 7rem;
+}
+
+._home-perawatan .jenis-perawatan {
+    display: flex;
+}
+
+._home-perawatan .jenis-perawatan .gambar-perawatan {
+    margin-left: 7rem;
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+._home-perawatan .jenis-perawatan .gambar-perawatan img{
+    width: 500px;
+}
+
+._home-perawatan .penjelasan-perawatan {
+    margin-right: 7rem;
+    margin-top: 4rem;
+}
+
+._home-perawatan .mt-3 {
+    margin-top: 2.5rem;
+}
+
+._home-perawatan .penjelasan-perawatan p {
+    text-align: left;
+}
+
+._home-perawatan .penjelasan-perawatan .icon-perawatan {
+    display: flex;
+    
+}
+
+._home-perawatan .penjelasan-perawatan .icon-perawatan h2 {
+    color: #0a609e;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+._home-perawatan .penjelasan-perawatan .icon-perawatan i {
+    color: white;
+    background-color: #0a609e;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+  
+  
+/* pengiriman */
+._home-pengiriman {
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+._home-pengiriman .bg-pengiriman {
+    display: flex;
+    margin-left: 7rem;
+}
+
+.kirim-flex {
+    display: flex;
+}
+
+._home-pengiriman .bg-pengiriman .penjelasan-pengiriman {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: block;
+}
+
+._home-pengiriman .bg-pengiriman .penjelasan-pengiriman i {
+    color: white;
+    background-color: #0a609e;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+._home-pengiriman .bg-pengiriman .penjelasan-pengiriman h2 {
+    padding-left: 20px;
+    color: #0f74bc;
+    position: relative;
+    padding-top: 10px;
+}
+  
+._home-pengiriman .bg-pengiriman .penjelasan-pengiriman p {
+    margin-top: 1rem;
+    color: black;
+}
+  
+
+._home-pengiriman .bg-pengiriman .gambar-pengiriman img {
+    width: 400px;
+    padding-left: 5rem;
+}
+
+
+._layanan-produk .layanan-produk {
+    margin-top: 5rem;
+}
+
+._layanan-produk  .layanan-produk  h2 {
+    color: #0f74bc;
+}
+
+.jenis-dispenser {
+    display: flex;
+    margin-left: 1.2rem;
+}
+
+.jenis-dispenser li {
+    margin-right: 2rem;
+}
+
+._produk ._penjelasan-produk p {
+    text-align: left;
+}
+.__dispenser-flex ._penjelasan-produk p {
+    text-align: left;
+}
+
+._produk ._dispenser {
+    margin-left: 5rem;
+}
+
+._produk-layananProduk {
+    margin-right: 5rem;
+    margin-left: 8rem;
+}
+
+._produk-layananProduk ._produk {
+    margin: 0 auto;
+    display: flex;
+}
+
+.td-block {
+    display: inline;
+}
+
+._penjelasan-produk tr td {
+    padding-right: 2rem;
+}
+
+.li-produk {
+    padding-left: 20px;
+}
+
+._produk-layananProduk ._produk _.img-produk{
+    flex: 1;
+}
+
+._produk-layananProduk ._produk ._penjelasan-produk {
+    margin-top: 4rem;
+    flex: 1;
+}
+
+._produk-layananProduk ._produk ._img-produk img {
+    width: 400px;
+}
+
+._produk-layananProduk .__dispenser-flex {
+    margin: 0 auto;
+    display: flex;
+}
+
+._produk-layananProduk .__dispenser-flex _.img-produk{
+    flex: 1;
+}
+
+._produk-layananProduk .__dispenser-flex ._penjelasan-produk {
+    margin-top: 4rem;
+    flex: 1;
+}
+
+._produk-layananProduk .__dispenser-flex ._img-produk img {
+    width: 400px;
+}
+
+.collapsible {
+    background-color: #0a609e;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .collapsible::after {
+    content: '\25bc';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active-bre,.collapsible:hover {
+    background-color: #0f74bc;
+  }
+  
+  .content-coll {
+    padding: 0 18px 10px;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgb(200, 214, 219);
+  }
+
+  .content-coll ol {
+    padding-left: 15px;
+  }
+
+
+/* Kontak us */
+
+
+.form-group {
+    flex-basis: 60%;
+    padding: 2rem;
+}
+
+
+.form-group form input {
+    padding: 3px;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border: none;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.form-group form textarea {
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.form-group iframe {
+    width: 100%;
+}
+
+.btn-form {
+    display: inline;
+}
+
+.btn-form button {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 10px;
+    background-color: #0f74bc;
+    color: white;
+}
+
+.btn-form button:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.konten-kontak {
+    display: flex;
+}
+
+.hubungi {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.043), rgba(0, 0, 0, 0.043)), 
+    url(../img/background.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hubungi .judul {
+    padding-top: 5rem;
+    text-align: center;
+    color: #0f74bc;
+    position: relative;
+}
+
+.hubungi .judul::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 10;
+    left: calc(50% - 20px);
+}
+
+.hubungi .contain-hubungi {
+    margin: 0 5rem;
+}
+
+.hubungi .contain-hubungi .card-hubungi {
+    display: flex;
+}
+
+.body-hubungi {
+    margin-left: 7rem;
+    flex: 0 0 20%;
+}
+
+.icons-email {
+    margin-top: 10px;
+    display: flex;
+}
+ 
+.body-hubungi i {
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.body-hubungi .card-img{
+    margin-top: 2rem;
+}
+
+.body-hubungi .card-img img {
+    width: 300px;
+}
+
+/* FOOTER */ 
+/* FOOTER */
+.svg-foot {
+    margin-bottom: -10rem;
+}
+
+.copyright {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.copyright p {
+    color: #ededf0;
+    text-align: center;
+}
+
+footer {
+    margin-top: 4rem;
+    min-height: 40vh;
+    background-color: #0f74bc;
+}
+
+.foot-background {
+    width: 100%;
+        
+}
+
+.footer-produk {
+    display: flex;
+    padding: 0 5rem;
+}
+
+.footernih {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 2rem;
+}
+
+.footernih img {
+    border-radius: 15px;
+    width: 200px;
+}
+
+.footernih p {
+    margin-top: 10px;
+    color: white;
+}
+
+.footernih a {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.footernih h2 {
+    font-size: 18px;
+    color: white;
+}
+
+.bug {
+    margin-top: -1.5rem;
+}
+
+.wa-me {
+    position: fixed;
+    bottom: 7%;
+    right: 5%;
+}
+
+._link-wa {
+    text-decoration: none;
+    color: white;
+}
+
+.wa-me .whatsapp i {
+    background-color: #27bb5d;
+    padding: 10px 13px;
+    border-radius: 100%;
+    font-size: 2.7rem;
+    transition: all ease 300ms;
+}
+.wa-me .whatsapp i:hover {
+    background-color: #1f8043;
+}
+
+
+  
+  
+  /* /////// RESPONSIVE 1 111111111111111111 // // / / / / / */
+  @media screen and (max-width: 1200px) {
+
+    
+    .main-content .text-pembuka h1 {
+        /* text-align: right; */
+        font-size: 2.5rem;
+        /* line-height: 5rem; */
+    }
+
+    .main-content .text-pembuka .text-color {
+        font-size: 5rem;
+    }
+
+    .main-content .aside-pembuka {
+        padding-top: 5rem;
+    }
+
+    .main-content .aside-pembuka img {
+        width: 300px;
+    }
+
+    .bug {
+        margin-top: -1rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .gambar-pengiriman img {
+        width: 350px;
+        padding-left: 2rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman {
+        margin-left: 4.5rem;
+    }
+
+    .text-jelasin {
+        margin-left: 1rem;
+        padding: 1px;
+    }
+
+    ._produk-layananProduk ._produk ._img-produk img {
+        width: 340px;
+    }
+    ._produk-layananProduk .__dispenser-flex ._img-produk img {
+        width: 340px;
+    }
+  }
+
+
+  /* /////// RESPONSIVE 2 222222222222222222 // // / / / / / */
+  @media screen and (max-width: 900px) {
+
+    .card-img {
+        margin-bottom: 3rem;
+        display: flex;
+    }
+
+    .card-img img {
+        margin: 0 auto;
+    }
+
+    .hubungi .contain-hubungi .card-hubungi {
+        display: block;
+    }
+
+    .body-hubungi {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+
+    .pt {
+        margin-left: 2rem;
+    }
+
+    ._produk ._dispenser {
+        margin-left: 0;
+    }
+
+    ._produk-layananProduk {
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    ._produk-layananProduk ._produk ._penjelasan-produk {
+        margin-top: 1rem;
+    }
+
+    ._produk-layananProduk ._produk {
+        flex-direction: column;
+    }
+
+    ._produk-layananProduk .__dispenser-flex {
+        flex-direction: column-reverse;
+    }
+    
+    ._produk-layananProduk .__dispenser-flex ._penjelasan-produk {
+        margin-top: 1rem;
+    }
+
+    ._img-produk {
+        display: flex;
+    }
+
+    ._img-produk img {
+        margin: 0 auto;
+    }
+
+    .tentang-wet-produk {
+        margin: 0 5rem;
+    }
+
+    .jelasin-latarBel {
+        display: block;
+    }
+
+    .text-jelasin {
+        margin: 5rem 0 0 ;
+        padding: 0;
+    }
+
+    .nilai-perusahaan .nilai-nilai .bg-nilai i, .nilai-perusahaan .nilai-nilai .bg-nilai h3 {
+        font-weight: 600;
+        color: #ededf0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .produk-content .content .img-wet img {
+        margin: 0 0 0 -2rem;
+    }
+
+    .jelasin-latarBel {
+        padding-top: 5rem;
+        display: block;
+        margin:0;
+    }
+    .foto-jelasin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        margin-right: 2rem;
+    }
+
+    .scrolling .logo {
+        margin-left: 4rem;
+    }
+
+    .navigasi {
+        padding: 1rem;
+        display: flex;
+        box-shadow: 0 2px 15px #0f74bc;
+    }
+    
+    .logo {
+        flex-grow: 1;
+        margin-left: 2rem;
+    }
+    
+    nav ul {
+		display: flex;
+		position: absolute;
+		right: 0;
+		top: -20px;
+		width: 100%;
+		height: 100vh;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		background: #ededf0;
+		box-shadow:  0 0 20px 3px #0f74bc;
+		z-index: 1;
+		transform: translateX(100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+
+	nav ul.slide {
+		opacity: 1;
+		transform: translate(0);
+	}
+
+    .nav-responsive {
+        display: flex;
+    }
+
+    .main-content .text-pembuka h1 {
+        /* text-align: right; */
+        font-size: 1.8rem;
+        line-height: normal;
+        margin-top: -4rem;
+    }
+    .main-content .text-pembuka .text-color {
+        font-size: 3.5rem;
+    }
+
+    .main-content .aside-pembuka {
+        padding-top: 3rem;
+    }
+
+    .main-content .aside-pembuka img {
+        width: 250px;
+    }
+
+    .partnership .bg-partnership .customer {
+        margin-bottom: 2rem;
+        animation: logo 40s linear infinite;
+    }
+
+    .produk-content .content {
+        display: block;
+    }
+
+    .produk-content .content .img-wet {
+        margin: 0 auto;
+    }
+
+    .produk-content .content .tentang-wet {
+        margin: 0 4rem;
+    }
+
+    .produk-content .content .tentang-wet h2 {
+        margin-top: 2rem;
+    }
+
+    .produk-content .content .tentang-wet p {
+        margin-right: 0;
+        color: black;
+    }
+
+    .visi-misi .background-visi {
+        flex-direction: column-reverse;
+    }
+
+    .visi-misi .background-visi .goals {
+        margin: 0 auto;
+    }
+
+    ._home-layananProduk {
+        margin: 0 5rem;
+    }
+
+    ._home-layananProduk .bg-produk {
+        margin: 0 10px;
+
+    }
+
+    .bg-produk img {
+        width: 100px;
+    }
+
+    ._home-perawatan .jenis-perawatan {
+        
+        display: block;
+    }
+
+    ._home-perawatan .jenis-perawatan .gambar-perawatan {
+        margin: 0 auto;
+        max-width: 65%;
+    }
+
+    ._home-perawatan .penjelasan-perawatan {
+        margin: 0 5rem;
+    }
+
+    ._home-pengiriman {
+        margin: 5rem 5rem 0;
+    }
+
+    ._home-pengiriman .bg-pengiriman {
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+    ._home-pengiriman .bg-pengiriman .gambar-pengiriman {
+        margin: 0 auto;
+    }
+
+    ._home-pengiriman .bg-pengiriman .gambar-pengiriman img  {
+        padding: 0;
+    }
+
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman {
+        max-width: 100%;
+    }
+    
+    .svg-foot {
+        margin-bottom: -5rem;
+    }
+
+    .hilang {
+        display: none;
+    }
+    
+    .footer-produk {
+        display: block;
+    }
+
+    .footernih {
+        max-width: 100%;
+    }
+
+    .footernih img {
+        width: 100px;
+    }
+  }
+
+  /* /////// RESPONSIVE 3 3 3 3 3 3 3 3 3 3 333333333 // // / / / / / */
+  @media screen and (max-width: 500px) {
+    
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman p {
+        margin-top: 1rem;
+        color: black;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    .produk-content .content .tentang-wet p {
+        text-align: justify;
+    }
+
+    ._penjelasan-produk table {
+        text-align: justify;
+    }
+
+    ._penjelasan-produk table tr td {
+        padding-bottom: 0.5rem;
+    }
+    
+    .tentang-wet-produk {
+        margin: 0 3rem;
+    }
+
+    .tentang-wet-produk .text-jelasin p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .visi-misi .background-visi .visi p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .text-jelasi p {
+        text-align: justify;
+    }
+
+    .visi-misi .background-visi .misi ul {
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    ._home-perawatan .penjelasan-perawatan p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .body-hubungi .card-img img {
+        width: 200px;
+    }
+
+    .hubungi .contain-hubungi {
+        margin: 0 2rem;
+    }
+
+    ._produk-layananProduk {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    ._penjelasan-produk tr td {
+        padding-right: 0.46rem;
+    }
+
+    ._produk-layananProduk ._produk ._img-produk img {
+        width: 200px;
+    }
+
+    ._produk-layananProduk .__dispenser-flex ._img-produk img {
+        width: 200px;
+    }
+
+    ._penjelasan-produk table {
+        font-size: 12px;
+    }
+    .__dispenser-flex  p {
+        font-size: 12px;
+    }
+    .__dispenser-flex  .jenis-dispenser{
+        font-size: 12px;
+    }
+    ._penjelasan-produk .__dispenser-flex table {
+        font-size: 12px;
+    }
+
+    .nilai-perusahaan {
+        margin-bottom: 4rem;
+    }
+
+    .produk-content .content .img-wet img {
+        margin: 0 0 0 -1rem;
+    }
+
+    .nilai-perusahaan .nilai-nilai .bg-nilai {
+        padding: 10px;
+        margin: 0 auto;
+    }
+    
+
+    .nilai-perusahaan .nilai-nilai .bg-nilai i, .nilai-perusahaan .nilai-nilai .bg-nilai h3 {
+        font-size: 0.8rem;
+    }
+
+    .nilai-perusahaan .nilai-nilai {
+        margin: 2rem 0;
+    }
+    
+
+    .main-content .text-pembuka {
+        margin-left: -5rem;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .produk-content .content .img-wet img {
+        width: 120px;
+    }
+
+    .main-content .text-pembuka h1 {
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+
+    .main-content .text-pembuka .text-color {
+        font-size: 2.6rem;
+    }
+
+    .main-content .aside-pembuka {
+        padding-top: 7rem;
+    }
+
+    .main-content .aside-pembuka  {
+        margin-left: 5rem;
+    }
+
+    .main-content .aside-pembuka img {
+        width: 200px;
+    }
+
+    .partnership h2 {
+        padding-top: 3rem;
+    }
+
+
+    .partnership .bg-partnership .customer {
+        margin-bottom: 4rem;
+        animation: logo 30s linear infinite;
+    }
+
+    .partnership .bg-partnership .para-logo {
+        padding: 5px;
+        margin: 4rem 2rem 0 ;
+        
+    }
+
+    .partnership .bg-partnership .para-logo img {
+        width: 70px;
+    } 
+
+    .produk-content .content .img-wet img {
+        width: 200px;
+    }
+
+    .produk-content .content .tentang-wet h2 {
+        font-size: 2rem;
+    }
+
+    .visi-misi .background-visi .goals {
+        margin-top: 3rem;
+    }
+
+    .visi-misi .background-visi .goals img {
+        width: 200px;
+    }
+
+    .visi-misi .background-visi .visi h2 {
+        font-size: 2rem;
+    }
+
+    .visi-misi .background-visi {
+        padding: 3rem;
+    }
+
+    .bg-produk img {
+        width: 60px;
+    }
+
+    ._home-perawatan .jenis-perawatan .gambar-perawatan img {
+        width: 250px;
+    }
+
+    ._home-pengiriman .bg-pengiriman .gambar-pengiriman img {
+        width: 250px;
+    }
+    
+    .kirim-flex {
+        margin-top: 3rem;
+    }
+
+    .collapsible {
+        font-size: 14px;
+    }
+
+    ._home-pengiriman {
+        margin-bottom: 3rem;
+    }
+
+    .footernih {
+        padding: 0;
+    }
+
+    .visi-misi {
+        margin-bottom: -1rem;
+    }
+    
+    .tentang-wet-produk .latar-belakang {
+        padding-top: 3rem;
+    }
+
+  }
+
+  @media screen and (max-width: 375px) {
+
+    ._produk-layananProduk {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    .nilai-perusahaan .nilai-nilai .bg-nilai i, .nilai-perusahaan .nilai-nilai .bg-nilai h3 {
+        font-size: 0.8rem;
+    }
+
+    .visi-misi {
+        margin-bottom: 0;
+    }
+
+    .tentang-wet-produk {
+        margin: 0 3rem;
+    }
+
+    .foto-jelasin img {
+        width: 250px;
+    }
+
+    .text-jelasin h2 {
+        font-size: 2rem;
+    } 
+
+    .main-content .aside-pembuka  {
+        margin-left: 0.5rem;
+    }
+
+    .bug {
+        margin-top: -1rem;
+    }
+
+    .produk-content .content .img-wet img {
+        width: 150px;
+    }
+    
+    .produk-content .content .tentang-wet h2 {
+        font-size: 1.6em;
+    }
+
+    .visi-misi .background-visi .visi h2 {
+        font-size: 1.6rem;
+    }
+
+    ._home-perawatan .penjelasan-perawatan .icon-perawatan i {
+        font-size: 1.6rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman i {
+        font-size: 1.6rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .gambar-pengiriman img {
+        width: 200px;
+    }
+
+    ._home-perawatan .penjelasan-perawatan {
+        margin: 0 3.2rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman {
+        max-width: 120%;
+        margin: 0 -2rem;
+    }
+
+    .footer-produk {
+        margin: 0 -2rem;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+
+    .hubungi .judul {
+        padding-bottom: 3rem;
+    }
+
+    .body-hubungi .card-img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .form-group {
+        padding: 0;
+    }
+
+    .pt {
+        margin-left: 0;
+    }
+
+    .pt h2 {
+        font-size: 1.5rem;
+    }
+
+    ._produk-layananProduk {
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .text-jelasin h2 {
+        font-size: 1.5rem;
+    }
+
+    .nilai-perusahaan .nilai-nilai .bg-nilai i, .nilai-perusahaan .nilai-nilai .bg-nilai h3 {
+        font-size: 0.6rem;
+    }
+
+    .produk-content .content .img-wet img {
+        margin: 0 0 0 0;
+    }
+
+
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman {
+        max-width: 120%;
+        margin: 0 -1rem;
+    }
+
+    .logo {
+        margin-left: 0.2rem;
+    }
+    nav {
+        margin-right: 0.2rem;
+    }
+
+    .scrolling .logo {
+        margin-left: 2.1rem;
+    }
+
+
+    .main-content .text-pembuka h1 {
+        margin-left: -1rem;
+    }
+
+    .main-content .aside-pembuka img {
+        width: 180px;
+    }
+
+    .partnership h2 {
+        font-size: 1rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman i {
+        font-size: 1rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .penjelasan-pengiriman h2 {
+        font-size: 1rem;
+    }
+
+    .partnership .bg-partnership .customer {
+        animation: logo 20s linear infinite;
+    }
+
+    .produk-content .content .img-wet img {
+        width: 120px;
+    }
+
+    .produk-content .content .tentang-wet h2 {
+        font-size: 1rem;
+    }
+
+    .visi-misi .background-visi .visi h2 {
+        font-size: 1rem;
+    }
+
+    .layanan-produk .judul {
+        font-size: 1rem;
+    }
+
+    .bg-produk img {
+        width: 40px;
+    }
+
+    ._home-layananProduk .produk-produk {
+        margin-top: 3rem;
+    }
+
+    ._home-perawatan .jenis-perawatan .gambar-perawatan img {
+        width: 200px;
+    }
+
+    ._home-perawatan .penjelasan-perawatan .icon-perawatan i {
+        font-size: 1rem;
+    }
+
+    ._home-perawatan .penjelasan-perawatan .icon-perawatan h2 {
+        font-size: 1rem;
+    }
+
+    ._home-pengiriman .bg-pengiriman .gambar-pengiriman img {
+        width: 150px;
+    }
+
+    
+  }
+
+  
+
