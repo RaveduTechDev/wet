@@ -160,6 +160,11 @@ nav ul li .nav-links.active::after {
 	transform: rotate(-45deg) translate(-1px, 0);
 }
 
+.copyright p b a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Home */
 
@@ -1254,10 +1259,7 @@ footer {
         margin-bottom: -5rem;
     }
 
-    .copyright a {
-        text-decoration: none;
-        color: white;
-    }
+    
 
     .hilang {
         display: none;
