@@ -1254,6 +1254,11 @@ footer {
         margin-bottom: -5rem;
     }
 
+    .copyright a {
+        text-decoration: none;
+        color: white;
+    }
+
     .hilang {
         display: none;
     }
