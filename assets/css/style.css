@@ -433,6 +433,18 @@ main {
 .alur-produksi .bg-produksi h2 {
     text-align: center;
     color: #0f74bc;
+    position: relative;
+}
+
+.alur-produksi .bg-produksi h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 0;
+    left: calc(50% - 20px);
 }
 
 .alur-produksi .bg-produksi .gambar-alur {
@@ -500,6 +512,19 @@ main {
 .nilai-perusahaan h2 {
     color: #0f74bc;
     text-align: center;
+    position: relative;
+}
+
+
+.nilai-perusahaan h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 0;
+    left: calc(50% - 20px);
 }
 
 .nilai-perusahaan .nilai-nilai {
@@ -858,6 +883,63 @@ main {
     padding-left: 5rem;
 }
 
+/* serti */
+.sertifikat {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.sertifikat h2 {
+    text-align: center;
+    color: #0f74bc;
+    position: relative;
+}
+.sertifikat h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.sertifikat .flex-serti {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sertifikat  .akhir-grid {
+    margin: 0 15rem;
+    background-color: #0f74bc;
+    color: white;
+    text-align: center;
+    margin: 3rem 25rem 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+.sertifikat .akhir-grid:hover {
+    background-color: #0a609e;
+}
+
+
+.sertifikat .flex-serti .card-serti {
+    background-color: #0f74bc;
+    color: white;
+    text-align: center;
+    margin: 3rem 8rem 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+
+.sertifikat .flex-serti .card-serti:hover {
+    background-color: #0a609e;
+}
+
 /* FOOTER */ 
 /* FOOTER */
 .svg-foot {
@@ -999,7 +1081,20 @@ footer {
   /* /////// RESPONSIVE 2 222222222222222222 // // / / / / / */
   @media screen and (max-width: 900px) {
 
-    
+    .sertifikat .flex-serti {
+        display: block;
+    }
+
+    .sertifikat .akhir-grid {
+        margin: 0 15rem;
+        background-color: #0f74bc;
+        color: white;
+        text-align: center;
+        margin: 3rem 8rem 0;
+        padding: 15px;
+        border-radius: 10px;
+        transition: all 300ms ease;
+    }
     .via {
         display: block;
         text-align: center;
@@ -1280,6 +1375,22 @@ footer {
 
   /* /////// RESPONSIVE 3 3 3 3 3 3 3 3 3 3 333333333 // // / / / / / */
   @media screen and (max-width: 500px) {
+
+    .sertifikat .akhir-grid {
+        margin: 3rem 3rem 0;
+    }
+
+    .sertifikat .akhir-grid h3 {
+        font-size: 0.8rem;
+    }
+
+    .sertifikat .flex-serti .card-serti h3 {
+        font-size: 0.8rem;
+    }
+
+    .sertifikat .flex-serti .card-serti {
+        margin: 3rem 3rem 0px;
+    }
 
     .via-wa {
         margin-left: 0;
@@ -1581,6 +1692,14 @@ footer {
   }
 
   @media screen and (max-width: 350px) {
+
+    .sertifikat .akhir-grid {
+        margin: 3rem 2rem 0;
+    }
+
+    .sertifikat .flex-serti .card-serti {
+        margin: 3rem 2rem 0px;
+    }
 
     .hubungi .judul {
         padding-bottom: 3rem;

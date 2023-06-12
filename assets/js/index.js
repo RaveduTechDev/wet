@@ -23,7 +23,6 @@ for (let i = 0; i < menuLength; i++) {
     
 }
 
-
 // collapse menu
 let coll = document.getElementsByClassName("collapsible");
 let i;
