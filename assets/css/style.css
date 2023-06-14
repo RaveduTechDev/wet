@@ -252,7 +252,6 @@ main {
 
 /* partnership */
 .partnership {
-    position: relative;
     background-color: #0f74bc;
 }
 
@@ -265,7 +264,6 @@ main {
 
 .partnership .bg-partnership {
     overflow: hidden;
-    position: relative;
     
 }
 
@@ -1040,6 +1038,7 @@ footer {
 }
 
 .wa-me {
+    z-index: 1;
     position: fixed;
     bottom: 7%;
     right: 5%;
