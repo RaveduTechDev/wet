@@ -192,6 +192,13 @@ main {
     max-width: 50%;
 }
 
+.main-content .img-perusahaan img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
 .main-content .text-pembuka h1 {
     text-align: right;
     font-size: 3rem;
@@ -216,11 +223,40 @@ main {
     font-size: 7rem;
 }
 
+.panah-kanan {
+    padding: 5px;
+    background-color: #0000008a;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    font-size: 3rem;
+    z-index: 4;
+}
+
+.panah-kiri {
+    padding: 5px;
+    background-color: #0000008a;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-size: 3rem;
+    z-index: 4;
+}
+
 /* 0f74bc */
+.svg-top {
+    position: relative;
+    margin-top: -8rem;
+    z-index: 1;
+}
 
 /* partnership */
 .partnership {
-    margin-top: -3rem;
+    position: relative;
+    z-index: 2;
+    margin-top: -5rem;
     background-color: #0f74bc;
 }
 
@@ -1081,6 +1117,23 @@ footer {
   /* /////// RESPONSIVE 2 222222222222222222 // // / / / / / */
   @media screen and (max-width: 900px) {
 
+    .panah-kanan {
+        padding: 5px;
+        background-color: #0000008a;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        right: 8%;
+        font-size: 3rem;
+        z-index: 4;
+    }
+    
+    .panah-kiri {
+        top: 40%;
+        left: 8%;
+    }
+    
+
     .sertifikat .flex-serti {
         display: block;
     }
@@ -1376,6 +1429,18 @@ footer {
   /* /////// RESPONSIVE 3 3 3 3 3 3 3 3 3 3 333333333 // // / / / / / */
   @media screen and (max-width: 500px) {
 
+    .panah-kanan {
+       display: none;
+    }
+    
+    .panah-kiri {
+        display: none;
+    }
+
+    .partnership {
+        margin-top: -3rem;
+    }
+
     .sertifikat .akhir-grid {
         margin: 3rem 3rem 0;
     }
@@ -1619,6 +1684,10 @@ footer {
   }
 
   @media screen and (max-width: 375px) {
+
+    .partnership {
+        margin-top: -2rem;
+    }
 
     ._produk-layananProduk {
         margin-right: 3rem;
