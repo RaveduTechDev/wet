@@ -253,13 +253,15 @@ main {
 /* partnership */
 .partnership {
     position: relative;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
     background-color: #0f74bc;
 }
 
 .partnership h2 {
+    margin-top: 3rem;
     text-align: center;
     color: white;
+    font-size: 1.3rem;
 }
 
 .partnership .bg-partnership {
