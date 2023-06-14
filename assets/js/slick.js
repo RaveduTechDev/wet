@@ -1,7 +1,7 @@
 // scroll kanan kiri bagian depan () => index paling utama
 $('.scrollX').slick({
     autoPlay: true,
-    dots: true,
+    dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 1,
