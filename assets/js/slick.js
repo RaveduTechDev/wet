@@ -21,6 +21,34 @@ $('.scrollX').slick({
                 arrows: false,
                 slidesToShow: 1
             }
+        }, 
+        {
+            breakpoint: 450,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 380,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 350,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
         }
     ]
 });

@@ -1683,6 +1683,14 @@ footer {
 
   @media screen and (max-width: 375px) {
 
+    .panah-kanan {
+        display: none;
+     }
+     
+     .panah-kiri {
+         display: none;
+     }
+
     .partnership {
         margin-top: -2rem;
     }
@@ -1759,6 +1767,14 @@ footer {
   }
 
   @media screen and (max-width: 350px) {
+
+    .panah-kanan {
+        display: none;
+     }
+     
+     .panah-kiri {
+         display: none;
+     }
 
     .sertifikat .akhir-grid {
         margin: 3rem 2rem 0;
