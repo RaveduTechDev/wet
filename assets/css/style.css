@@ -1116,20 +1116,12 @@ footer {
   @media screen and (max-width: 900px) {
 
     .panah-kanan {
-        padding: 5px;
-        background-color: #0000008a;
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        right: 8%;
-        font-size: 3rem;
-        z-index: 4;
-    }
-    
-    .panah-kiri {
-        top: 40%;
-        left: 8%;
-    }
+        display: none;
+     }
+     
+     .panah-kiri {
+         display: none;
+     }
     
 
     .sertifikat .flex-serti {

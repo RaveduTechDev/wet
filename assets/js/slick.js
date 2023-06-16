@@ -9,7 +9,7 @@ $('.scrollX').slick({
     nextArrow: '<i class="fa-solid fa-angle-right panah-kanan"></i>',
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 900,
             settings: {
                 arrows: false,
                 slidesToShow: 1
