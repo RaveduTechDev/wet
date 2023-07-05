@@ -10,4 +10,4 @@ jQuery(document).ready(function($){
     var target = $('nav .nav-links[href="'+path+'"]');
     // Add active class to target link
     target.addClass('active');
-  });
+});

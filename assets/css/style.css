@@ -16,6 +16,17 @@ body {
     overflow-x: hidden;
 }
 
+.tagline {
+    margin-left: 2rem;
+    flex-grow: 1;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.tagline p {
+    font-weight: 500;
+}
+
 .navigasi {
     background-color: white;
     position: relative;
@@ -25,7 +36,6 @@ body {
 }
 
 .logo {
-    flex-grow: 1;
     margin-left: 6rem;
 }
 
@@ -225,7 +235,7 @@ main {
 
 .panah-kanan {
     padding: 5px;
-    background-color: #0000008a;
+    background-color: #18181850;
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -236,7 +246,7 @@ main {
 
 .panah-kiri {
     padding: 5px;
-    background-color: #0000008a;
+    background-color: #18181850;
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -802,6 +812,8 @@ main {
     padding-left: 15px;
   }
 
+  
+
 
 /* Kontak us */
 
@@ -821,6 +833,7 @@ main {
 
 
 .via-wa {
+    display: block;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 4rem;
@@ -886,7 +899,9 @@ main {
 }
 
 .body-hubungi {
-    margin: 0 10%;
+    position: relative;
+    z-index: 2;
+    margin: 0 10% 2rem;
     display: flex;
 }
 
@@ -897,9 +912,13 @@ main {
 
  
 .body-hubungi i {
-    padding-right: 5px;
+    padding-right: 15px;
     font-size: 1.5rem;
 }
+
+/* .body-hubungi .icons-email{
+    
+} */
 
 .body-hubungi .card-img{
     margin-top: 2rem;
@@ -914,6 +933,16 @@ main {
 .pt {
     margin-top: 4rem;
     padding-left: 5rem;
+}
+
+.icons-email a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.icons-footer i {
+    padding-right: 7px;
 }
 
 /* serti */
@@ -951,6 +980,21 @@ main {
     padding: 15px;
     border-radius: 10px;
     transition: all 300ms ease;
+    display: flex;
+}
+
+.sertifikat  .akhir-grid i {
+    background-color: #0a609e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: -15px;
+    border-radius: 10px;
+}
+
+.sertifikat  .akhir-grid h3 {
+    margin: 0 auto;
 }
 
 .sertifikat .akhir-grid:hover {
@@ -959,6 +1003,7 @@ main {
 
 
 .sertifikat .flex-serti .card-serti {
+    display: flex;
     background-color: #0f74bc;
     color: white;
     text-align: center;
@@ -966,6 +1011,21 @@ main {
     padding: 15px;
     border-radius: 10px;
     transition: all 300ms ease;
+}
+
+.sertifikat .flex-serti .card-serti i {
+    background-color: #0a609e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: -15px;
+    border-radius: 10px;
+}
+
+.sertifikat .flex-serti .card-serti h3 {
+    padding-left: 15px;
+    margin: 0 auto;
 }
 
 
@@ -1064,9 +1124,62 @@ footer {
   
   
   /* /////// RESPONSIVE 1 111111111111111111 // // / / / / / */
+
+  @media screen and (max-width: 1340px) {
+    nav {
+        margin-right: 2rem;
+    }
+
+    .scrolling .logo {
+        margin-left: 4rem;
+    }
+
+    .navigasi {
+        padding: 1rem;
+        display: flex;
+        box-shadow: 0 2px 15px #0f74bc;
+    }
+    
+    .logo {
+        margin-left: 2rem;
+    }
+    
+    nav ul {
+		display: flex;
+		position: absolute;
+		right: 0;
+		top: -20px;
+		width: 100%;
+		height: 100vh;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		background: #ededf0;
+		box-shadow:  0 0 20px 3px #0f74bc;
+		z-index: 1;
+		transform: translateX(100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+
+    nav ul li  {
+        margin-top: -15rem;
+    }
+
+	nav ul.slide {
+		opacity: 1;
+		transform: translate(0);
+	}
+
+    .nav-responsive {
+        display: flex;
+    }
+  }
+
+
   @media screen and (max-width: 1200px) {
 
-    
+       
     .main-content .text-pembuka h1 {
         /* text-align: right; */
         font-size: 2.5rem;
@@ -1115,12 +1228,17 @@ footer {
   /* /////// RESPONSIVE 2 222222222222222222 // // / / / / / */
   @media screen and (max-width: 900px) {
 
+    .tagline {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
     .panah-kanan {
         display: none;
      }
      
      .panah-kiri {
-         display: none;
+        display: none;
      }
     
 
@@ -1241,56 +1359,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    nav {
-        margin-right: 2rem;
-    }
-
-    .scrolling .logo {
-        margin-left: 4rem;
-    }
-
-    .navigasi {
-        padding: 1rem;
-        display: flex;
-        box-shadow: 0 2px 15px #0f74bc;
-    }
-    
-    .logo {
-        flex-grow: 1;
-        margin-left: 2rem;
-    }
-    
-    nav ul {
-		display: flex;
-		position: absolute;
-		right: 0;
-		top: -20px;
-		width: 100%;
-		height: 100vh;
-		justify-content: space-evenly;
-		flex-direction: column;
-		align-items: center;
-		background: #ededf0;
-		box-shadow:  0 0 20px 3px #0f74bc;
-		z-index: 1;
-		transform: translateX(100%);
-		transition: all 1s;
-		opacity: 0;
-	}
-
-    nav ul li  {
-        margin-top: -15rem;
-    }
-
-	nav ul.slide {
-		opacity: 1;
-		transform: translate(0);
-	}
-
-    .nav-responsive {
-        display: flex;
     }
 
     .main-content .text-pembuka h1 {
@@ -1417,8 +1485,32 @@ footer {
   }
 
   /* /////// RESPONSIVE 3 3 3 3 3 3 3 3 3 3 333333333 // // / / / / / */
+  @media screen and (max-width: 604px) {
+    .tagline {
+        margin-top: 0.5rem;
+    }
+    .tagline p {
+        text-align: center;
+    }
+
+    .via-wa a {
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .tagline {
+        font-size: 0.8rem;
+    }
+  }
+
   @media screen and (max-width: 500px) {
 
+    /* .tagline {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    } */
+   
     .panah-kanan {
        display: none;
     }
@@ -1674,6 +1766,10 @@ footer {
   }
 
   @media screen and (max-width: 375px) {
+
+    .tagline {
+        font-size: 0.7rem;
+    }
 
     .panah-kanan {
         display: none;

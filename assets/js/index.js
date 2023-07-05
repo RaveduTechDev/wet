@@ -20,7 +20,6 @@ for (let i = 0; i < menuLength; i++) {
     if (menuItem[i].href === lokasi) {
         menuItem[i].classList = 'active'
     }
-    
 }
 
 // collapse menu
@@ -40,4 +39,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
