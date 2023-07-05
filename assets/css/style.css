@@ -261,15 +261,23 @@ main {
 }
 
 /* partnership */
-.partnership {
-    background-color: #0f74bc;
-}
-
 .partnership h2 {
     margin-top: 3rem;
     text-align: center;
-    color: white;
+    color: #0f74bc;
     font-size: 1.3rem;
+    position: relative;
+}
+
+.partnership h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0f74bc;
+    bottom: 0;
+    left: calc(50% - 20px);
 }
 
 .partnership .bg-partnership {
@@ -1098,7 +1106,7 @@ footer {
 }
 
 .wa-me {
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     bottom: 7%;
     right: 5%;
